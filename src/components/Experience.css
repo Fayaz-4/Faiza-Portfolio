@@ -1,0 +1,100 @@
+.experience-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.experience-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+}
+
+.exp-col-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.exp-col-title .icon {
+  color: var(--accent-color);
+}
+
+.exp-card {
+  padding: 2.5rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+.exp-role {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.exp-company {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.exp-duration {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.exp-details {
+  color: var(--text-secondary);
+  padding-left: 1.2rem;
+}
+
+.exp-details li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cert-card {
+  padding: 1.5rem;
+  border-left: 4px solid var(--accent-color);
+  transition: transform var(--transition-speed) ease;
+}
+
+.cert-card:hover {
+  transform: translateX(10px);
+}
+
+.cert-card h4 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .experience-content {
+    grid-template-columns: 1fr;
+  }
+}
